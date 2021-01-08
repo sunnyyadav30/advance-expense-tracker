@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {SpeechProvider} from '@speechly/react-client'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <SpeechProvider appId="e3d6d836-bb7e-4966-9053-179a0544ba9e" language="en-US">
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </SpeechProvider>,
   document.getElementById('root')
 );
 
